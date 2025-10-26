@@ -1,4 +1,4 @@
-// 1.	Ввести сторону квадрата a. Найти периметр  и площадь квадрата.
+// 1.	Enter the side of the square a. Find the perimeter and area of the square.
 #include <iostream>
 int main() {
 	try {
