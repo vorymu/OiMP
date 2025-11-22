@@ -4,11 +4,13 @@
 #include <cmath>
 #include <vector>
 #include <string>
+#include <windows.h>
 
 void task3();
 void task9();
 void task12();
 void task16();
+void setupRussianConsole();
 
 double enterNumber();
 std::uint64_t validateInput(double);
@@ -48,7 +50,7 @@ void printAnswer(std::uint64_t, std::uint64_t, bool);
 
 int main() {
 	try {
-		std::setlocale(LC_ALL, "Russian");
+		setupRussianConsole();
 		task3();
 		task9();
 		task12();
@@ -59,6 +61,12 @@ int main() {
 		return 1;
 	}
 return 0;
+}
+
+void setupRussianConsole() {
+	std::setlocale(LC_ALL, "Russian");
+	SetConsoleOutputCP(65001);
+	SetConsoleCP(65001);
 }
 
 void task3() {
