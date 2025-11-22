@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstdint>
 #include <array>
 #include <cmath>
@@ -107,7 +107,7 @@ void task16() {
 
 double enterNumber() {
 	double input{};
-	std::cout << "3. Ïðîãðàììà äîáàâëÿåò ñëåâà è ñïðàâà â çàïèñè ÷èñëà öèôðó, ïîâòîðÿþùóþñÿ ìàêñèìàëüíîå ÷èñëî ðàç;\nÂâåäèòå íàòóðàëüíîå ÷èñëî n = ";
+	std::cout << "3. ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ ÑÐ»ÐµÐ²Ð° Ð¸ ÑÐ¿Ñ€Ð°Ð²Ð° Ð² Ð·Ð°Ð¿Ð¸ÑÐ¸ Ñ‡Ð¸ÑÐ»Ð° Ñ†Ð¸Ñ„Ñ€Ñƒ, Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÑŽÑ‰ÑƒÑŽÑÑ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ñ€Ð°Ð·;\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ n = ";
 	if (!(std::cin >> input)) {
 		throw "Error: Invalid input!";
 	}
@@ -164,14 +164,14 @@ std::uint64_t addDigitsToBothSides(uint16_t most_frequent_digit, std::uint64_t m
 	return result;
 }
 void printResults(uint16_t most_frequent_digit, std::uint16_t max_count, std::uint64_t result) {
-	std::cout << "\n=== ÐÅÇÓËÜÒÀÒ: ===\n";
-	std::cout << "Öèôðà, ïîâòîðÿþùàÿñÿ ìàêñèìàëüíîå ÷èñëî ðàç: " << most_frequent_digit << " (âñòðåòèëîñü " << max_count << " ðàç)\n" << result << '\n';
+	std::cout << "\n=== Ð Ð•Ð—Ð£Ð›Ð¬Ð¢ÐÐ¢: ===\n";
+	std::cout << "Ð¦Ð¸Ñ„Ñ€Ð°, Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÑŽÑ‰Ð°ÑÑÑ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ñ€Ð°Ð·: " << most_frequent_digit << " (Ð²ÑÑ‚Ñ€ÐµÑ‚Ð¸Ð»Ð¾ÑÑŒ " << max_count << " Ñ€Ð°Ð·)\n" << result << '\n';
 }
 
 
 double enterN() {
 	double second_input{};
-	std::cout << "\n\n9. Ïðîãðàììà, êîòîðàÿ äëÿ çàäàííîãî íàòóðàëüíîãî ÷èñëà N íàõîäèò, íå ïðåâûøàþùèå ýòî ÷èñëî, äðóæåñòâåííûå;\nÂâåäèòå íàòóðàëüíîå ÷èñëî N = ";
+	std::cout << "\n\n9. ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°, ÐºÐ¾Ñ‚Ð¾Ñ€Ð°Ñ Ð´Ð»Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° N Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚, Ð½Ðµ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‰Ð¸Ðµ ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾, Ð´Ñ€ÑƒÐ¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ðµ;\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ N = ";
 	if (!(std::cin >> second_input)) {
 		throw "Error: Invalid input!";
 	}
@@ -240,17 +240,17 @@ void printDivisors(std::uint64_t N) {
 	}
 }
 void printAmicablePairs(const std::vector<std::pair<std::uint64_t, std::uint64_t>>& amicablePairs) {
-	std::cout << "\n=== ÏÀÐÛ ÄÐÓÆÅÑÒÂÅÍÍÛÕ ×ÈÑÅË ÌÅÍÜØÅ ×ÈÑËÀ N: === \n";
+	std::cout << "\n=== ÐŸÐÐ Ð« Ð”Ð Ð£Ð–Ð•Ð¡Ð¢Ð’Ð•ÐÐÐ«Ð¥ Ð§Ð˜Ð¡Ð•Ð› ÐœÐ•ÐÐ¬Ð¨Ð• Ð§Ð˜Ð¡Ð›Ð N: === \n";
 	if (amicablePairs.empty()) {
-		std::cout << "Íåò ïàð äðóæåñòâåííûõ ÷èñåë.\n";
+		std::cout << "ÐÐµÑ‚ Ð¿Ð°Ñ€ Ð´Ñ€ÑƒÐ¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ».\n";
 	}
 	else {
-		std::cout << "Íàéäåíî " << amicablePairs.size() << " ïàð äðóæåñòâåííûõ ÷èñåë: \n";
+		std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ " << amicablePairs.size() << " Ð¿Ð°Ñ€ Ð´Ñ€ÑƒÐ¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»: \n";
 		}
 		size_t i = 1;
 		for (const auto& pair : amicablePairs) {
 			std::cout << (i) << ". ";
-			std::cout << pair.first << " è " << pair.second << std::endl;
+			std::cout << pair.first << " Ð¸ " << pair.second << std::endl;
 			std::cout << "  " << pair.first << " = "; printDivisors(pair.second); std::cout << std::endl;
 			std::cout << "  " << pair.second << " = "; printDivisors(pair.first); std::cout << std::endl << std::endl;
 			++i;
@@ -260,7 +260,7 @@ void printAmicablePairs(const std::vector<std::pair<std::uint64_t, std::uint64_t
 
 double enterA() {
 	double input_a{};
-	std::cout << "\n12. Ïðîãðàììà, êîòîðàÿ íà çàäàííîì îòðåçêå [a,b] íàòóðàëüíîãî ðÿäà ÷èñåë íàõîäèò âñå ÷èñëà Àðìñòðîíãà;\nÂâåäèòå íàòóðàëüíîå ÷èñëî à = ";
+	std::cout << "\n12. ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°, ÐºÐ¾Ñ‚Ð¾Ñ€Ð°Ñ Ð½Ð° Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð¼ Ð¾Ñ‚Ñ€ÐµÐ·ÐºÐµ [a,b] Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ€ÑÐ´Ð° Ñ‡Ð¸ÑÐµÐ» Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ Ð²ÑÐµ Ñ‡Ð¸ÑÐ»Ð° ÐÑ€Ð¼ÑÑ‚Ñ€Ð¾Ð½Ð³Ð°;\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð° = ";
 	if (!(std::cin >> input_a)) {
 		throw "Error: Invalid input!";
 	}
@@ -268,7 +268,7 @@ double enterA() {
 }
 double enterB() {
 	double input_b{};
-	std::cout << "Ââåäèòå íàòóðàëüíîå ÷èñëî b = ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ b = ";
 	if (!(std::cin >> input_b)) {
 		throw "Error: Invalid input!";
 	}
@@ -290,10 +290,10 @@ std::uint64_t validateBInput(double input_b) {
 }
 void swap(std::uint64_t& a, std::uint64_t& b) {
 	if (a > b) {
-		std::cout << "\nÇàìå÷àíèå: ãðàíèöû îòðåçêà áûëè àâòîìàòè÷åñêè óïîðÿäî÷åíû:\n";
-		std::cout << "Èñõîäíûé ââîä: [" << a << ", " << b << "]\n";
+		std::cout << "\nÐ—Ð°Ð¼ÐµÑ‡Ð°Ð½Ð¸Ðµ: Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ð¾Ñ‚Ñ€ÐµÐ·ÐºÐ° Ð±Ñ‹Ð»Ð¸ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ ÑƒÐ¿Ð¾Ñ€ÑÐ´Ð¾Ñ‡ÐµÐ½Ñ‹:\n";
+		std::cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´: [" << a << ", " << b << "]\n";
 		std::swap(a, b);
-		std::cout << "Ðàáî÷èé äèàïàçîí: [" << a << ", " << b << "]\n";
+		std::cout << "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½: [" << a << ", " << b << "]\n";
 	}
 }
 bool isArmstrongNumber(std::uint64_t number) {
@@ -346,12 +346,12 @@ void demonstrateArmstrong(std::uint64_t number) {
 	}
 }
 void printArmstrongNumbers(std::uint64_t a, std::uint64_t b, std::vector<std::uint64_t> armstrong_numbers) {
-	std::cout << "\n=== ×ÈÑËÀ ÀÐÌÑÒÐÎÍÃÀ ÍÀ ÎÒÐÅÇÊÅ [" << a << ", " << b << "] ===\n";
+	std::cout << "\n=== Ð§Ð˜Ð¡Ð›Ð ÐÐ ÐœÐ¡Ð¢Ð ÐžÐÐ“Ð ÐÐ ÐžÐ¢Ð Ð•Ð—ÐšÐ• [" << a << ", " << b << "] ===\n";
     
     if (armstrong_numbers.empty()) {
-        std::cout << "×èñåë Àðìñòðîíãà íå íàéäåíî.\n";
+        std::cout << "Ð§Ð¸ÑÐµÐ» ÐÑ€Ð¼ÑÑ‚Ñ€Ð¾Ð½Ð³Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾.\n";
     } else {
-		std::cout << "Íàéäåíî " << armstrong_numbers.size() << " ÷èñåë Àðìñòðîíãà:\n";
+		std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ " << armstrong_numbers.size() << " Ñ‡Ð¸ÑÐµÐ» ÐÑ€Ð¼ÑÑ‚Ñ€Ð¾Ð½Ð³Ð°:\n";
         
         for (size_t i = 0; i < armstrong_numbers.size(); ++i) {
             std::cout << (i + 1) << ". ";
@@ -364,7 +364,7 @@ void printArmstrongNumbers(std::uint64_t a, std::uint64_t b, std::vector<std::ui
 
 double enterNumberA() {
 	double input_A{};
-	std::cout << "\n\n16. Ïðîãðàììà, êîòîðàÿ äëÿ çàäàííûõ íàòóðàëüíûõ ÷èñåë À è Â îïðåäåëÿåò âîçìîæíîñòü ïîëó÷åíèÿ ÷èñëà À âû÷åðêèâàíèåì öèôð èç ÷èñëà Â;\nÂâåäèòå íàòóðàëüíîå ÷èñëî A = ";
+	std::cout << "\n\n16. ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð°, ÐºÐ¾Ñ‚Ð¾Ñ€Ð°Ñ Ð´Ð»Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» Ð Ð¸ Ð’ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ñ‡Ð¸ÑÐ»Ð° Ð Ð²Ñ‹Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ†Ð¸Ñ„Ñ€ Ð¸Ð· Ñ‡Ð¸ÑÐ»Ð° Ð’;\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A = ";
 	if (!(std::cin >> input_A)) {
 		throw "Error: Invalid input!";
 	}
@@ -372,7 +372,7 @@ double enterNumberA() {
 }
 double enterNumberB() {
 	double input_B{};
-	std::cout << "Ââåäèòå íàòóðàëüíîå ÷èñëî B = ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ B = ";
 	if (!(std::cin >> input_B)) {
 		throw "Error: Invalid input!";
 	}
@@ -409,22 +409,22 @@ bool canObtainByErasing(std::uint64_t A, std::uint64_t B) {
 	return i == strA.length();
 }
 void printAnswer(std::uint64_t A, std::uint64_t B, bool second_result) {
-	std::cout << "\n=== ÐÅÇÓËÜÒÀÒ ===\n";
-	std::cout << "×èñëî A: " << A << std::endl;
-	std::cout << "×èñëî B: " << B << std::endl;
+	std::cout << "\n=== Ð Ð•Ð—Ð£Ð›Ð¬Ð¢ÐÐ¢ ===\n";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ A: " << A << std::endl;
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ B: " << B << std::endl;
 	if (second_result) {
-		std::cout << "ÌÎÆÍÎ ïîëó÷èòü ÷èñëî " << A << " âû÷åðêèâàíèåì öèôð èç ÷èñëà " << B << std::endl;
+		std::cout << "ÐœÐžÐ–ÐÐž Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð¾ " << A << " Ð²Ñ‹Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ†Ð¸Ñ„Ñ€ Ð¸Ð· Ñ‡Ð¸ÑÐ»Ð° " << B << std::endl;
 		demonstrateErasing(A, B);
 	}
 	else {
-		std::cout << "ÍÅÂÎÇÌÎÆÍÎ ïîëó÷èòü ÷èñëî " << A << " âû÷åðêèâàíèåì öèôð èç ÷èñëà " << B << std::endl;
+		std::cout << "ÐÐ•Ð’ÐžÐ—ÐœÐžÐ–ÐÐž Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð¾ " << A << " Ð²Ñ‹Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ†Ð¸Ñ„Ñ€ Ð¸Ð· Ñ‡Ð¸ÑÐ»Ð° " << B << std::endl;
 	}
 }
 void demonstrateErasing(std::uint64_t A, std::uint64_t B) {
 	std::string strA = std::to_string(A);
 	std::string strB = std::to_string(B);
 
-	std::cout << "Äåìîíñòðàöèÿ:\n";
+	std::cout << "Ð”ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ:\n";
 	std::cout << "B = " << strB << std::endl;
 
 	std::string second_result;
@@ -434,13 +434,13 @@ void demonstrateErasing(std::uint64_t A, std::uint64_t B) {
 		if (i < strA.length() && strB[j] == strA[i]) {
 			second_result += strB[j];
 			i++;
-			std::cout << "  Îñòàâëÿåì öèôðó: " << strB[j] << " (ïîçèöèÿ " << j + 1 << ")" << std::endl;
+			std::cout << "  ÐžÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼ Ñ†Ð¸Ñ„Ñ€Ñƒ: " << strB[j] << " (Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ñ " << j + 1 << ")" << std::endl;
 		}
 		else {
-			std::cout << "  Âû÷åðêèâàåì öèôðó: " << strB[j] << " (ïîçèöèÿ " << j + 1 << ")" << std::endl;
+			std::cout << "  Ð’Ñ‹Ñ‡ÐµÑ€ÐºÐ¸Ð²Ð°ÐµÐ¼ Ñ†Ð¸Ñ„Ñ€Ñƒ: " << strB[j] << " (Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ñ " << j + 1 << ")" << std::endl;
 		}
 	}
 
-	std::cout << "Ïîëó÷åííîå ÷èñëî: " << second_result << std::endl;
-	std::cout << "Öåëåâîå ÷èñëî A: " << strA << std::endl;
+	std::cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: " << second_result << std::endl;
+	std::cout << "Ð¦ÐµÐ»ÐµÐ²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A: " << strA << std::endl;
 }
