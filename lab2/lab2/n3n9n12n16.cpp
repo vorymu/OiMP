@@ -14,13 +14,13 @@ void setupRussianConsole();
 
 double enterNumber();
 std::uint64_t validateInput(double);
-std::array <uint16_t, 10> findFrequencyOfDigits(std::uint64_t);
+std::array <std::uint16_t, 10> findFrequencyOfDigits(std::uint64_t);
 std::uint16_t findTheMostFrequentDigit(const std::array<uint16_t, 10>&);
-std::uint16_t findTheMaxCount(const std::array<uint16_t, 10>&, uint16_t);
-void validadeUniqueFrequency(const std::array<uint16_t, 10>&, std::uint16_t, uint16_t);
+std::uint16_t findTheMaxCount(const std::array<std::uint16_t, 10>&, std::uint16_t);
+void validadeUniqueFrequency(const std::array<std::uint16_t, 10>&, std::uint16_t, std::uint16_t);
 std::uint64_t calculateMultiplier(std::uint64_t);
-std::uint64_t addDigitsToBothSides(uint16_t, std::uint64_t, std::uint64_t);
-void printResults(uint16_t, std::uint16_t, std::uint64_t);
+std::uint64_t addDigitsToBothSides(std::uint16_t, std::uint64_t, std::uint64_t);
+void printResults(std::uint16_t, std::uint16_t, std::uint64_t);
 void demonstrateArmstrong(std::uint64_t);
 
 double enterN();
@@ -130,7 +130,7 @@ std::array<std::uint16_t, 10> findFrequencyOfDigits(std::uint64_t number) {
 	}
 	return digits_count;
 }
-std::uint16_t findTheMostFrequentDigit(const std::array<uint16_t, 10>& digits_count) {
+std::uint16_t findTheMostFrequentDigit(const std::array<std::uint16_t, 10>& digits_count) {
 	std::uint16_t max_count{};
 	std::uint16_t most_frequent_digit{};
 	for (size_t i = 0; i < 10; ++i) {
@@ -141,11 +141,11 @@ std::uint16_t findTheMostFrequentDigit(const std::array<uint16_t, 10>& digits_co
 	}
 	return most_frequent_digit;
 }
-std::uint16_t findTheMaxCount(const std::array<uint16_t, 10>& digits_count, uint16_t most_frequent_digit) {
+std::uint16_t findTheMaxCount(const std::array<std::uint16_t, 10>& digits_count, std::uint16_t most_frequent_digit) {
 	std::uint16_t max_count = digits_count[most_frequent_digit];
 	return max_count;
 }
-void validadeUniqueFrequency(const std::array<uint16_t, 10>& digits_count, std::uint16_t max_count, uint16_t most_frequent_digit) {
+void validadeUniqueFrequency(const std::array<std::uint16_t, 10>& digits_count, std::uint16_t max_count, std::uint16_t most_frequent_digit) {
 	for (size_t i = 0; i < 10; ++i) {
 		if (digits_count[i] == max_count && i != most_frequent_digit) {
 			throw "Error: Multiple digits have the same maximum frequency!";
