@@ -1,3 +1,0 @@
-﻿  var2.cpp
-D:\оимп\labs\lab 3\array_v2\Project1\var2.cpp(86,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project1.vcxproj -> D:\оимп\labs\lab 3\array_v2\x64\Debug\Project1.exe
