@@ -1,20 +1,19 @@
 #include <cctype>
 #include <cstddef>
-#include <cstdint>
 #include <iostream>
 
-bool IsDelimiter(char symbol, const char* delimiters);
-bool IsVowel(char symbol);
-void CopyWordWithCapitalization(const char* source, char* destination, std::size_t length);
-void ProcessString(const char* inputString, const char* delimiters, char* resultString);
+bool IsDelimiter(char, const char*);
+bool IsVowel(char);
+void CopyWordWithCapitalization(const char*, char*, std::size_t);
+void ProcessString(const char*, const char*, char*);
 
 int main()
 {
     const std::size_t MAX_LENGTH = 301;
 
-    char inputString[MAX_LENGTH];
-    char delimiters[MAX_LENGTH];
-    char resultString[MAX_LENGTH * 2];
+    char inputString[MAX_LENGTH] = "";
+    char delimiters[MAX_LENGTH] = "";
+    char resultString[MAX_LENGTH * 2] = "";
 
     std::cout << "Enter delimiter characters: ";
     std::cin.getline(delimiters, MAX_LENGTH);
